@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kurze Charakterquizze für den Start eurer D&D-Session nach den Regeln von 2024.">
+<title>Vor der Session · D&D-Charakterquiz</title>
+<style>
+:root{color-scheme:dark;--bg:#151315;--card:#211c21;--text:#f6ead9;--muted:#c3b3af;--line:#473c42;--gold:#edc684;--rose:#e9a6bc;--green:#bee4bd;font-family:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#302327 0,transparent 42rem),var(--bg);color:var(--text);min-height:100vh}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.48}a{color:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}button, a, h1,h2,h3{overflow-wrap:anywhere}header,main,footer{width:min(100% - 40px,880px);margin-inline:auto}header{display:flex;justify-content:space-between;align-items:center;gap:1rem;border-bottom:1px solid var(--line);padding:1.2rem 0;color:var(--muted);font-size:.87rem}header b{color:var(--text);font-weight:650}header a{text-decoration:none}header a:hover{text-decoration:underline}.mark{color:var(--gold);margin-inline-end:.45rem}.hero{text-align:center;padding:3.6rem 0 2.2rem}.ornament{color:var(--gold);letter-spacing:.45em;font-size:1.45rem}h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif}h1{font-size:clamp(2.65rem,8vw,5.6rem);line-height:.98;letter-spacing:-.055em;margin:.65rem 0 1rem;font-weight:600}h2{font-size:clamp(1.65rem,5vw,2.5rem);line-height:1.12;margin:.35rem 0 .75rem}p{line-height:1.65;color:var(--muted);margin:.5rem 0}h3{font-size:1.4rem;margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{--accent:var(--rose);display:flex;flex-direction:column;align-items:flex-start;position:relative;isolation:isolate;overflow:hidden;padding:1.5rem;background:linear-gradient(145deg,#33232e 0,var(--card) 78%);border:1px solid #66505c;border-radius:1rem}.card.light{--accent:var(--gold);border-color:#655537;background:linear-gradient(145deg,#382b20 0,var(--card) 78%)}.emblem{display:grid;place-items:center;color:var(--accent);font-size:1.9rem;width:3rem;height:3rem;border:1px solid currentColor;border-radius:50%;margin-bottom:1.15rem}.card h2{margin-bottom:0}.card p{margin-bottom:1.35rem}.card .pool-size{font-size:.86rem;margin-top:-.8rem}.card .primary{margin-top:auto;background:var(--accent)}.primary,.secondary{border-radius:.55rem;min-height:44px;padding:.67rem 1.02rem;font-weight:680}.primary{background:var(--gold);color:#211720;border:1px solid transparent}.secondary{border:1px solid var(--line);background:transparent;color:var(--text)}button:not(:disabled):hover{filter:brightness(1.15)}.stats{text-align:center;margin-top:1.2rem;font-size:.88rem}footer{margin-top:2.5rem;border-top:1px solid var(--line);padding:1.1rem 0 1.5rem;font-size:.82rem;color:var(--muted);line-height:1.65}footer a{text-underline-offset:.2em}summary{cursor:pointer;width:fit-content}.panel{max-width:690px;margin:2rem auto 0;padding:clamp(1rem,4vw,2rem);background:var(--card);border:1px solid var(--line);border-radius:1rem}.top,.actions{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.7rem}.top{color:var(--gold);font-size:.9rem}.progress{width:100%;height:.38rem;margin:1.15rem 0 1.35rem;accent-color:var(--gold)}fieldset{border:0;margin:1.15rem 0;padding:0;min-width:0}.choice{display:flex;align-items:center;gap:.65rem;border:1px solid var(--line);border-radius:.55rem;padding:.65rem .8rem;margin:.5rem 0;min-height:46px;cursor:pointer}.choice input{accent-color:var(--gold);width:1rem;height:1rem;flex:none}.choice:has(:checked){border-color:var(--gold);background:#352b26}.choice.correct{border-color:#749078}.choice.wrong{border-color:#b67587}.feedback{padding:.8rem 1rem;margin:0 0 1rem;border-left:3px solid var(--gold);background:#31282a}.feedback p{margin:.2rem 0 0}.good{color:var(--green)}.bad{color:var(--rose)}.result{padding:1rem 0;border-bottom:1px solid var(--line)}.result:last-child{border-bottom:0}.result p{margin:.35rem 0}.score{font-size:clamp(2.7rem,9vw,4.2rem);color:var(--gold);font-family:Georgia,serif}.scores{margin:1rem 0 1.25rem}.sr{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%)}@media(max-width:575px){.grid{grid-template-columns:1fr}.hero{padding-top:2.25rem}header{font-size:.78rem}.card{padding:1.2rem}}
+</style>
+</head>
+<body>
+<header><a href="#" id="home"><b><span class="mark" aria-hidden="true">✦</span>Vor der Session</b></a><span>D&D 2024 · Stufe 5</span></header>
+<main id="app"></main>
+<footer><details><summary>Regelquellen</summary><a href="https://www.dndbeyond.com/sources/dnd/br-2024/character-classes">Klassen</a> · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/character-origins">Tiefling</a> · <a href="https://roll20.net/compendium/dnd5e/Subclasses%3AAssassin?expansion=32231">Assassine</a> · <a href="https://roll20.net/compendium/dnd5e/Subclasses%3ALight%20Domain?expansion=32231">Lichtdomäne</a> · <a href="https://www.dndbeyond.com/sources/dnd/br-2024/spell-descriptions">Zauber</a> · <a href="https://roll20.net/compendium/dnd5e/Races%3AAasimar?expansion=32231">Aasimar</a></details></footer>
+<script>
+'use strict';
+// Each row contains a prompt, the correct option, three distractors, and feedback.
+const characters = {
+  assassine: { title: 'Azrael', subtitle: 'Infernalischer Tiefling · Schurke (Assassine)', icon: '♠', theme: '', questions: [
+    ['Wie viel Zusatzschaden bringt dein Hinterhältiger Angriff auf Stufe 5?', '3W6', '2W6', '4W6', '5W6', 'Auf Schurkenstufe 5 würfelst du 3W6 Zusatzschaden.'],
+    ['Welche Waffe kann deinen Hinterhältigen Angriff auslösen, wenn die übrigen Voraussetzungen erfüllt sind?', 'Eine Finesse- oder Fernkampfwaffe', 'Jede einfache Waffe', 'Nur ein Dolch', 'Jede Waffe, die du zweihändig führst', 'Entscheidend ist, dass der Angriff mit einer Finesse- oder Fernkampfwaffe erfolgt.'],
+    ['Du triffst mit deiner Waffe ohne Vorteil oder Nachteil. Ein kampffähiger Verbündeter steht direkt neben dem Ziel. Darfst du Hinterhältigen Angriff anwenden?', 'Ja, wenn deine Waffe geeignet ist und du die Fähigkeit in diesem Zug noch nicht eingesetzt hast.', 'Nein, du brauchst immer Vorteil.', 'Ja, aber nur in der ersten Kampfrunde.', 'Ja, bei jedem Treffer in diesem Zug.', 'Der kampffähige Verbündete ist höchstens 1,5 m vom Ziel entfernt und du hast keinen Nachteil. Deine Waffe muss eine Finesse- oder Fernkampfwaffe sein.'],
+    ['Du hast Hinterhältigen Angriff in deinem Zug eingesetzt. Im Zug eines Gegners triffst du mit einem Gelegenheitsangriff. Kannst du erneut Zusatzschaden verursachen?', 'Ja, wenn der Treffer die Voraussetzungen erfüllt.', 'Nein, der Zusatzschaden gilt nur einmal pro Runde.', 'Ja, aber nur mit einer Fernkampfwaffe.', 'Nein, Reaktionsangriffe zählen grundsätzlich nie.', 'Hinterhältiger Angriff gilt einmal pro Zug. Der Zug des Gegners ist ein anderer Zug.'],
+    ['Du möchtest nach einem Treffer an einem zweiten Gegner vorbeilaufen und keine Gelegenheitsangriffe provozieren. Welche Bonusaktion hilft?', 'Rückzug', 'Sprinten', 'Ausweichen', 'Zielsicher', 'Listige Aktion erlaubt dir Rückzug als Bonusaktion. Deine Bewegung provoziert für den Rest dieses Zugs keine Gelegenheitsangriffe.'],
+    ['Was bringt dir Attentat beim Initiativewurf?', 'Vorteil', 'Einen festen Bonus von +5', 'Automatisch den ersten Zug', 'Einen zusätzlichen Zug', 'Du würfelst Initiative mit Vorteil.'],
+    ['In der ersten Kampfrunde hat die Wache noch keinen Zug gehabt. Was gewährt dir Attentat gegen sie?', 'Vorteil auf deine Angriffswürfe', 'Automatisch kritische Treffer', 'Einen zusätzlichen Angriff', 'Vorteil auf ihre Rettungswürfe', 'In Runde eins gilt der Vorteil gegen Kreaturen, die noch keinen Zug hatten.'],
+    ['In Runde eins hat dein Ziel schon gehandelt. Du triffst es trotzdem mit Hinterhältigem Angriff. Was bringt dir Attentat?', '+5 Schaden vom Typ der Waffe', 'Einen automatischen kritischen Treffer', 'Keinen Attentat-Schaden', '+5 Schaden, aber nur bei einer Fernkampfwaffe', 'Der Zusatzschaden gilt bei einem Hinterhältigen Angriff in Runde eins gegen jedes Ziel. Ob das Ziel schon gehandelt hat, entscheidet über den Angriffsvorteil durch Attentat.'],
+    ['Du hast dich in deinem Zug noch nicht bewegt. Was passiert, wenn du Zielsicher einsetzt?', 'Dein nächster Angriffswurf in diesem Zug hat Vorteil und deine Bewegungsrate fällt bis Zugende auf 0.', 'Alle Angriffe bis zur nächsten Runde haben Vorteil.', 'Du erhältst einen Bonusangriff und kannst dich normal bewegen.', 'Dein nächster Treffer ist automatisch kritisch.', 'Zielsicher verbraucht deine Bonusaktion und setzt voraus, dass du dich in diesem Zug noch nicht bewegt hast.'],
+    ['Ein Angreifer, den du siehst, trifft dich mit einem Angriffswurf für 19 Schaden. Was bleibt mit Unglaublichem Ausweichen?', '9 Schaden', '10 Schaden', '0 Schaden', '14 Schaden', 'Du kannst deine Reaktion einsetzen und den Schaden des Angriffs halbieren. 19 ÷ 2 wird auf 9 abgerundet.'],
+    ['Eine Falle verursacht Schaden nach einem misslungenen Geschicklichkeitsrettungswurf. Kannst du den Schaden mit Unglaublichem Ausweichen halbieren?', 'Nein, der Auslöser ist ein Treffer mit einem Angriffswurf.', 'Ja, wenn du die Falle siehst.', 'Ja, jeder Geschicklichkeitsrettungswurf löst es aus.', 'Ja, wenn du noch eine Bonusaktion hast.', 'Unglaubliches Ausweichen setzt einen Treffer mit einem Angriffswurf durch einen sichtbaren Angreifer voraus.'],
+    ['Nach einem normalen Treffer nutzt du das Merkmal „Raffinierter Schlag“ für einen Effekt, der 1W6 kostet. Wie viele W6 Zusatzschaden bleiben von deinem Hinterhältigen Angriff?', '2W6', '1W6', '3W6', '4W6', 'Du verzichtest auf einen der drei W6, um den Effekt auszulösen.'],
+    ['Du setzt Fällen gegen einen großen Gegner ein. Was entscheidet, ob er zu Boden geht?', 'Sein Geschicklichkeitsrettungswurf', 'Dein zweiter Angriffswurf', 'Sein Stärkerettungswurf', 'Sein Konstitutionsrettungswurf', 'Ein Ziel bis einschließlich Größe Groß liegt bei einem misslungenen Geschicklichkeitsrettungswurf am Boden.'],
+    ['Wie weit darfst du dich durch Zurückziehen direkt nach dem Angriff ohne Gelegenheitsangriffe bewegen?', 'Bis zur Hälfte deiner Bewegungsrate', 'Bis zur vollen Bewegungsrate', 'Immer genau 1,5 m', 'Doppelt so weit wie üblich', 'Zurückziehen erlaubt unmittelbar nach dem Angriff eine Bewegung bis zur halben Bewegungsrate.'],
+    ['Was musst du für die Option Gift des Merkmals „Raffinierter Schlag“ dabeihaben?', 'Ein Giftmischer-Set', 'Eine magische Waffe', 'Ein Kräuterkunde-Set', 'Einen Heiltrank', 'Für diese Option musst du ein Giftmischer-Set mitführen. Ob das Ziel vergiftet wird, hängt von seinem Konstitutionsrettungswurf ab.'],
+    ['Azrael erleidet 18 Feuerschaden. Wie viel bleibt durch die Resistenz seines infernalischen Erbes übrig?', '9 Schaden', '18 Schaden', '0 Schaden', '6 Schaden', 'Das infernalische Erbe gewährt Feuerresistenz. Sie halbiert den Feuerschaden.'],
+    ['Du triffst auf Stufe 5 mit Feuerpfeil. Was würfelst du für den Schaden?', '2W10 Feuerschaden', '1W10 Feuerschaden', '2W10 + 3W6 Feuerschaden', '3W6 Feuerschaden', 'Feuerpfeil steigt auf Charakterstufe 5 auf 2W10. Der Zauberangriff erfüllt die Waffenbedingung für Hinterhältigen Angriff nicht.'],
+    ['Ein sichtbarer Gegner in 12 m Entfernung fügt dir Schaden zu. Welchen Zauber deines infernalischen Erbes kannst du als Reaktion einsetzen?', 'Höllischer Tadel', 'Dunkelheit', 'Feuerpfeil', 'Thaumaturgie', 'Höllischer Tadel reagiert auf Schaden durch eine sichtbare Kreatur innerhalb von 18 m. Für Unglaubliches Ausweichen und Höllischen Tadel brauchst du jeweils deine Reaktion.'],
+    ['Du wirkst Dunkelheit mit deinem infernalischen Erbe. Hilft dir deine normale Dunkelsicht, durch den Bereich zu sehen?', 'Nein, die magische Dunkelheit blockiert normale Dunkelsicht.', 'Ja, weil du den Zauber selbst gewirkt hast.', 'Ja, aber nur auf 4,5 m Entfernung.', 'Ja, weil du Feuerresistenz hast.', 'Dunkelheit wird auf Charakterstufe 5 durch dein infernalisches Erbe verfügbar. Der Zauber erfordert Konzentration und blockiert auch deine eigene normale Dunkelsicht.'],
+    ['Du hast deine Aktion zum Angreifen benutzt. Jetzt erreichst du eine Stelle, an der du dich verstecken kannst. Wie versteckst du dich noch im selben Zug?', 'Mit Listiger Aktion versteckst du dich als Bonusaktion.', 'Du versteckst dich als Reaktion.', 'Du setzt Zielsicher ein und versteckst dich damit.', 'Du nutzt deine Bewegung als Ersatz für die Aktion Verstecken.', 'Mit Listiger Aktion kannst du dich als Bonusaktion verstecken, sofern die Voraussetzungen fürs Verstecken erfüllt sind.'],
+    ['Ein Gegner ist durch Gift aus deinem Raffinierten Schlag vergiftet. Wann darf er erneut würfeln, um den Zustand zu beenden?', 'Am Ende jedes seiner Züge', 'Zu Beginn jedes deiner Züge', 'Immer wenn er Schaden erleidet', 'Erst nach einer kurzen Rast', 'Der Gegner wiederholt seinen Konstitutionsrettungswurf am Ende jedes seiner Züge. Ein Erfolg beendet den Zustand.'],
+    ['Du setzt Fällen ein. Wie berechnest du den Schwierigkeitsgrad für den Rettungswurf des Gegners?', '8 + dein Geschicklichkeitsmodifikator + dein Übungsbonus', '8 + dein Stärkemodifikator + dein Übungsbonus', '10 + dein Geschicklichkeitsmodifikator', 'Dein Angriffswurf bestimmt den Schwierigkeitsgrad.', 'Für Raffinierter Schlag gilt SG 8 plus dein Geschicklichkeitsmodifikator plus dein Übungsbonus. Auf Stufe 5 beträgt der Übungsbonus +3.'],
+    ['Deine Bewegungsrate beträgt 9 m. Du möchtest in diesem Zug 15 m zurücklegen und danach noch angreifen. Wie schaffst du beides?', 'Du sprintest dank Listiger Aktion als Bonusaktion und greifst mit deiner Aktion an.', 'Du sprintest als Aktion und greifst mit Listiger Aktion an.', 'Du nutzt Zielsicher als Bonusaktion, um 6 m zusätzliche Bewegung zu erhalten.', 'Du nutzt Rückzug als Bonusaktion, um deine Bewegungsrate zu verdoppeln.', 'Wenn du mit Listiger Aktion als Bonusaktion sprintest, kannst du dich in diesem Zug bis zu 18 m bewegen. Deine Aktion bleibt für den Angriff frei.'],
+    ['Du hast seit der letzten langen Rast Höllischen Tadel einmal ohne Zauberplatz gewirkt und Dunkelheit noch nicht gewirkt. Kannst du Dunkelheit ohne Zauberplatz wirken?', 'Ja, jeder der beiden Zauber hat eine eigene Anwendung.', 'Nein, beide teilen sich eine Anwendung.', 'Ja, aber nur nach einer kurzen Rast.', 'Nein, ab Stufe 5 kostet Dunkelheit immer einen Zauberplatz.', 'Höllischer Tadel und Dunkelheit haben je eine Anwendung ohne Zauberplatz. Beide Anwendungen kehren nach einer langen Rast zurück.'],
+    ['Eine Wache steht neben einer unverschlossenen Tür, die höchstens 9 m von dir entfernt ist. Mit welchem Zaubertrick kannst du die Tür plötzlich zuschlagen lassen?', 'Thaumaturgie', 'Feuerpfeil', 'Licht', 'Taschenspielerei', 'Mit Thaumaturgie kannst du eine unverschlossene Tür oder ein unverschlossenes Fenster unmittelbar zuschlagen lassen.']
+  ]},
+  licht: { title: 'Ella', subtitle: 'Aasimar · Klerikerin (Domäne des Lichts)', icon: '☼', theme: 'light', questions: [
+    ['Ein sichtbarer Gegner 6 m von dir entfernt greift Azrael an. Wie hilft Schützendes Flackern?', 'Du gibst dem Angriffswurf per Reaktion Nachteil, bevor sein Ergebnis feststeht.', 'Du halbierst nach einem Treffer den Schaden.', 'Du heilst Azrael per Bonusaktion.', 'Du gibst dem Gegner Nachteil auf seinen nächsten Rettungswurf.', 'Schützendes Flackern funktioniert auf Stufe 5 auch, wenn Azrael das Ziel ist. Der Angreifer muss für dich sichtbar und höchstens 9 m entfernt sein.'],
+    ['Du hast beide Anwendungen von „Göttliche Macht fokussieren“ verbraucht. Wie viele bekommst du bei einer kurzen Rast zurück?', 'Eine', 'Keine', 'Zwei', 'Drei', 'Eine kurze Rast gibt dir eine verbrauchte Anwendung zurück. Eine lange Rast füllt beide Anwendungen wieder auf.'],
+    ['Du willst einen sichtbaren Verbündeten in 7,5 m Entfernung mit Göttlichem Funken heilen. Welche Ressource setzt du ein?', 'Eine Anwendung von „Göttliche Macht fokussieren“', 'Einen Zauberplatz des 1. Grades', 'Einen Zauberplatz des 3. Grades', 'Eine Anwendung Heilender Hände', 'Göttlicher Funke ist eine Klassenfähigkeit. Er kostet eine magische Aktion und eine Anwendung von „Göttliche Macht fokussieren“. Auf Stufe 5 heilt er 1W8 plus deinen Weisheitsmodifikator.'],
+    ['Azrael steht neben zwei Gegnern. Welche Fähigkeit lässt dich in deinem Umkreis von 9 m gezielt nur den Gegnern gleißenden Schaden zufügen?', 'Strahlen des Sonnenaufgangs', 'Feuerball', 'Brennende Hände', 'Tageslicht', 'Du setzt eine magische Aktion sowie eine Anwendung von „Göttliche Macht fokussieren“ ein und wählst die Kreaturen im Bereich aus. Ein misslungener Konstitutionsrettungswurf bedeutet 2W10 + 5 gleißenden Schaden, ein gelungener die Hälfte.'],
+    ['Du willst einen Stein in deiner Hand zum Leuchten bringen. Welcher Zauber aus deiner Liste passt?', 'Licht', 'Feenfeuer', 'Magie entdecken', 'Unsichtbares Sehen', 'Licht lässt den berührten Gegenstand bis zu eine Stunde leuchten. Eine lichtundurchlässige Abdeckung blockiert den Schein.'],
+    ['Du willst im Tempel eine Ansage machen und deine Stimme magisch verstärken. Was passt?', 'Thaumaturgie', 'Verständigung', 'Licht', 'Lenkendes Geschoss', 'Thaumaturgie kann deine Stimme eine Minute lang bis zu dreimal so laut machen. Währenddessen hast du Vorteil auf Charismawürfe für Einschüchtern.'],
+    ['Zwei Gegner stehen direkt vor dir. Welcher deiner Zauber des 1. Grades trifft Kreaturen in einem Kegel von 4,5 m?', 'Brennende Hände', 'Lenkendes Geschoss', 'Sengender Strahl', 'Feuerball', 'Brennende Hände erzeugt einen Kegel. Kreaturen darin legen einen Geschicklichkeitsrettungswurf gegen den Feuerschaden ab.'],
+    ['Einem unsichtbaren Gegner misslingt der Rettungswurf gegen Feenfeuer. Was bringt das Azrael, wenn er den Umriss sehen kann?', 'Er hat Vorteil auf seine Angriffswürfe gegen das Ziel.', 'Nur Ella hat Vorteil gegen das Ziel.', 'Er darf automatisch einen kritischen Treffer landen.', 'Er bekommt einen zusätzlichen Angriff als Reaktion.', 'Das markierte Ziel kann von Unsichtbarkeit nicht profitieren. Wer es sehen kann, hat Vorteil auf Angriffswürfe gegen das Ziel.'],
+    ['Du möchtest einer Bekannten in einer entfernten Stadt mit Verständigung eine Nachricht schicken. Wie lang darf sie sein?', 'Höchstens 25 Wörter', 'Höchstens 10 Wörter', 'Höchstens 50 Wörter', 'Beliebig lang, solange ihr euch kennt', 'Verständigung übermittelt bis zu 25 Wörter über beliebige Entfernung. Die Empfängerin kann sofort auf dieselbe Weise antworten.'],
+    ['Du triffst mit Lenkendem Geschoss. Azrael macht danach den nächsten Angriffswurf gegen das Ziel, noch vor dem Ende deines nächsten Zugs. Was bringt ihm dein Treffer?', 'Vorteil auf diesen Angriffswurf', 'Einen garantierten Treffer', 'Zusätzlichen Feuerschaden', 'Vorteil auf alle Angriffe des restlichen Kampfs', 'Lenkendes Geschoss gibt dem nächsten Angriffswurf gegen das Ziel Vorteil, sofern er bis zum Ende deines nächsten Zugs erfolgt.'],
+    ['Du berührst Azrael und wirkst Wunden heilen mit einem Zauberplatz des 1. Grades. Wie viele Trefferpunkte stellt der Zauber wieder her?', '2W8 + dein Weisheitsmodifikator', '1W8 + dein Weisheitsmodifikator', '2W4 + dein Übungsbonus', '3W4', 'Wunden heilen benötigt eine Aktion und heilt auf Grad 1 um 2W8 plus deinen Zauberattributsmodifikator. Als Klerikerin nutzt du Weisheit.'],
+    ['Die Gruppe hat Zeit, einen Raum zu untersuchen. Wie kannst du Magie entdecken wirken, ohne einen Zauberplatz zu verbrauchen?', 'Als Ritual', 'Als Reaktion', 'Als Zaubertrick', 'Mit „Göttliche Macht fokussieren“', 'Magie entdecken ist ein Ritualzauber. Als Ritual dauert das Wirken zehn Minuten länger und kostet keinen Zauberplatz.'],
+    ['Ein Verbündeter ist vor 30 Sekunden gestorben. Was brauchst du für Wiederbeleben als Materialkomponente?', 'Einen Diamanten im Wert von mindestens 300 GM, den der Zauber verbraucht', 'Ein heiliges Symbol als Ersatz für den Diamanten', 'Einen Diamanten im Wert von 50 GM, den du behältst', 'Einen Heiltrank', 'Wiederbeleben erfordert Berührung, wirkt innerhalb einer Minute nach dem Tod und bringt das Ziel mit 1 Trefferpunkt zurück.'],
+    ['Du wirkst Sengenden Strahl mit einem Zauberplatz des 2. Grades. Wie verteilst du die Strahlen?', 'Du kannst alle drei auf ein Ziel richten oder sie auf mehrere Ziele verteilen.', 'Für jeden Strahl brauchst du ein anderes Ziel.', 'Alle drei müssen auf dasselbe Ziel gehen.', 'Die Strahlen treffen automatisch die nächsten drei Gegner.', 'Du würfelst für jeden der drei Strahlen einen eigenen Fernkampf-Zauberangriff. Jeder Treffer verursacht 2W6 Feuerschaden.'],
+    ['Du willst eine unsichtbare Kreatur selbst sehen, ohne Feenfeuer zu wirken. Welcher Zauber aus deiner Liste hilft?', 'Unsichtbares Sehen', 'Magie entdecken', 'Tageslicht', 'Licht', 'Unsichtbares Sehen lässt dich eine Stunde lang unsichtbare Kreaturen und Gegenstände sehen. Der Zauber braucht keine Konzentration.'],
+    ['Azrael ist vergiftet und du stehst neben ihm. Wie setzt du Schwache Genesung ein?', 'Als Bonusaktion mit Berührung', 'Als Reaktion aus bis zu 18 m Entfernung', 'Als Ritual ohne Berührung', 'Als Teil von Wunden heilen', 'Schwache Genesung beendet bei Berührung einen passenden Zustand, etwa Vergiftet. Nach den 2024er Regeln ist ihre Zauberzeit eine Bonusaktion.'],
+    ['Du konzentrierst dich auf Schutzgeister und beginnst, Waffe des Glaubens zu wirken. Was passiert?', 'Schutzgeister enden, weil Waffe des Glaubens ebenfalls Konzentration erfordert.', 'Beide laufen weiter, da Waffe des Glaubens eine Bonusaktion ist.', 'Beide laufen weiter, solange du mit der Waffe nicht angreifst.', 'Schutzgeister enden erst bei deinem nächsten misslungenen Rettungswurf.', 'Waffe des Glaubens ist nach den 2024er Regeln ein Konzentrationszauber. Du kannst jeweils einen Konzentrationseffekt aufrechterhalten.'],
+    ['Zwei Verbündete stehen im Explosionsbereich deines Feuerballs. Was gilt ohne zusätzliche Schutzfähigkeit?', 'Auch sie müssen einen Geschicklichkeitsrettungswurf ablegen.', 'Du kannst sie beim Wirken als Ausnahmen bestimmen.', 'Sie sind als Verbündete automatisch geschützt.', 'Sie würfeln nur, wenn du sie siehst.', 'Feuerball erfasst jede Kreatur im Explosionsbereich. Bei Schutzgeistern kannst du beim Wirken dagegen Kreaturen ausnehmen.'],
+    ['Azrael hat Dunkelheit gewirkt. Was passiert, wenn der Bereich deines Zaubers Tageslicht diese Dunkelheit überlappt?', 'Der Dunkelheitszauber wird gebannt.', 'Beide Effekte laufen weiter und der überlappende Bereich bleibt dunkel.', 'Nur Azrael kann nun darin sehen.', 'Tageslicht wird durch Dunkelheit gebannt.', 'Tageslicht bannt überlappende Dunkelheit aus Zaubern bis einschließlich Grad 3. Azraels Dunkelheit ist ein Zauber des 2. Grades.'],
+    ['Drei sichtbare Verbündete in 15 m Entfernung haben 0 Trefferpunkte und leben noch. Welcher deiner Zauber heilt alle drei mit einer Bonusaktion?', 'Massen-Heilendes Wort', 'Wunden heilen', 'Wiederbeleben', 'Schwache Genesung', 'Massen-Heilendes Wort heilt bis zu sechs sichtbare Kreaturen in 18 m Reichweite mit einer Bonusaktion.'],
+    ['Wie oft kannst du Schützendes Flackern auf Stufe 5 zwischen langen Rasten einsetzen?', 'So oft wie dein Weisheitsmodifikator, mindestens einmal', 'Genau einmal, unabhängig von deiner Weisheit', 'So oft wie dein Übungsbonus', 'Einmal pro Runde ohne Gesamtlimit', 'Auf Stufe 5 bekommst du alle verbrauchten Anwendungen bei einer langen Rast zurück.'],
+    ['Drei Untote stehen höchstens 9 m von dir entfernt. Welchen Rettungswurf müssen sie ablegen, wenn du sie mit Untote vertreiben auswählst?', 'Weisheit', 'Konstitution', 'Charisma', 'Geschicklichkeit', 'Du nutzt eine Anwendung von „Göttliche Macht fokussieren“. Bei einem Misserfolg sind die betroffenen Untoten verängstigt und kampfunfähig und versuchen, sich von dir zu entfernen.'],
+    ['Ein Untoter scheitert an Untote vertreiben. Was passiert, wenn du auf Stufe 5 zusätzlich Untote versengen einsetzt?', 'Er erleidet gleißenden Schaden und bleibt vom Vertreiben betroffen.', 'Er wird immer sofort zerstört.', 'Er erleidet keinen Schaden, solange er verängstigt ist.', 'Der Zusatzschaden beendet sofort das Vertreiben.', 'Du würfelst so viele W8 wie dein Weisheitsmodifikator, mindestens einen. Dieser Schaden beendet Untote vertreiben nicht.'],
+    ['Azrael ist verletzt und du willst ihn als Aasimar mit Heilenden Händen versorgen. Wie viel kannst du auf Stufe 5 heilen?', '3W4 Trefferpunkte bei Berührung', '3W8 Trefferpunkte bei Berührung', '1W4 + Weisheitsmodifikator aus 18 m Entfernung', 'Genau 5 Trefferpunkte bei Berührung', 'Du nutzt eine magische Aktion und würfelst so viele W4 wie dein Übungsbonus, also drei. Die Anwendung kehrt bei einer langen Rast zurück.'],
+    ['Wann legst du fest, welche Form deine himmlische Verwandlung annimmt?', 'Jedes Mal, wenn du die Verwandlung als Bonusaktion aktivierst.', 'Einmal auf Stufe 3, danach bleibt die Form fest.', 'Bei jeder langen Rast, bevor du sie aktivierst.', 'Erst nach deinem ersten Treffer in der Verwandlung.', 'Du kannst dich einmal pro langer Rast für bis zu eine Minute verwandeln und dabei jedes Mal eine Form wählen.'],
+    ['Du wählst bei deiner himmlischen Verwandlung die Form mit den flugfähigen Flügeln. Wie schnell kannst du fliegen?', 'So schnell wie deine normale Bewegungsrate', 'Immer 18 m pro Zug, unabhängig von deiner Bewegungsrate', 'Halb so schnell wie deine normale Bewegungsrate', 'Doppelt so schnell wie deine normale Bewegungsrate', 'Die Flügel verleihen dir für die Dauer der Verwandlung eine Flugbewegungsrate in Höhe deiner Bewegungsrate.'],
+    ['Du wählst bei deiner himmlischen Verwandlung die Form mit dem gleißenden Licht aus Augen und Mund. Azrael steht am Ende deines Zugs 3 m von dir entfernt. Was passiert?', 'Auch Azrael erleidet 3 gleißenden Schaden.', 'Azrael ist als Verbündeter automatisch ausgenommen.', 'Azrael würfelt einen Geschicklichkeitsrettungswurf, um den Schaden ganz zu vermeiden.', 'Azrael erleidet 3 nekrotischen Schaden.', 'Diese Form schadet am Ende deiner Züge jeder Kreatur innerhalb von 3 m. Der Schaden entspricht deinem Übungsbonus.'],
+    ['Du wählst die finstere Form deiner himmlischen Verwandlung mit flugunfähigen Flügeln. Wer muss bei der Verwandlung einen Charismarettungswurf gegen den Schrecken ablegen?', 'Kreaturen innerhalb von 3 m, die keine Verbündeten sind', 'Alle Kreaturen innerhalb von 3 m, einschließlich Azrael', 'Nur untote Kreaturen innerhalb von 3 m', 'Alle Gegner innerhalb von 9 m', 'Wer den Rettungswurf verfehlt, ist bis zum Ende deines nächsten Zugs verängstigt. Deine Verbündeten sind ausgenommen.'],
+    ['Du triffst im selben eigenen Zug zwei Gegner mit Sengendem Strahl, während deine himmlische Verwandlung aktiv ist. Wie kannst du ihren Zusatzschaden einsetzen?', 'Einmal in deinem Zug gegen eines der getroffenen Ziele', 'Bei jedem Treffer gegen alle getroffenen Ziele', 'Nur gegen Kreaturen, die bereits verängstigt sind', 'Nur bei einem kritischen Treffer', 'Einmal pro eigenem Zug kannst du beim Schaden durch einen Angriff oder Zauber einem Ziel Zusatzschaden in Höhe deines Übungsbonus zufügen. Auf Stufe 5 sind das 3 Punkte.'],
+    ['Gegen welche beiden Schadensarten bist du als Aasimar resistent?', 'Gleißenden und nekrotischen Schaden', 'Feuer- und nekrotischen Schaden', 'Gleißenden Schaden und Feuerschaden', 'Gift- und Kälteschaden', 'Beide Resistenzen gelten auch, wenn du gerade nicht verwandelt bist.'],
+    ['Du stehst als Aasimar ohne Lichtquelle in gewöhnlicher Dunkelheit. Wie weit reicht deine Dunkelsicht?', '18 m', '9 m', '27 m', '36 m', 'Deine Aasimar-Dunkelsicht reicht 18 m weit. Magische Dunkelheit kann sie blockieren.'],
+    ['Was bringt dir die Rolle „Beschützer“ bei der Göttlichen Ordnung?', 'Umgang mit schweren Rüstungen und Kriegswaffen', 'Einen zusätzlichen Kleriker-Zaubertrick', 'Einen zusätzlichen Zauberplatz des 3. Grades', 'Eine zusätzliche Anwendung von „Göttliche Macht fokussieren“', 'Als Beschützerin bist du mit schweren Rüstungen vertraut und im Umgang mit Kriegswaffen geübt.'],
+    ['Du hast nach deiner langen Rast noch nichts gewirkt. Wie viele Zauberplätze hast du auf Klerikerstufe 5?', 'Vier des 1., drei des 2. und zwei des 3. Grades', 'Drei des 1., drei des 2. und drei des 3. Grades', 'Vier des 1. und vier des 2. Grades', 'Zwei je Grad, vom 1. bis zum 4. Grad', 'Deine Domänenzauber sind zusätzlich immer vorbereitet. Beim Wirken verwendest du dafür normalerweise einen passenden Zauberplatz.'],
+    ['Du wirkst Schutzgeister und bewegst dich so, dass der Bereich erstmals in diesem Zug den Platz eines Gegners erreicht. Was muss der Gegner tun?', 'Sofort einen Weisheitsrettungswurf ablegen', 'Erst am Beginn seines nächsten Zugs würfeln', 'Sofort einen Geschicklichkeitsrettungswurf ablegen', 'Nur würfeln, wenn er sich selbst bewegt', 'Die Schutzgeister wirken im Umkreis von 4,5 m. Auch wenn der Bereich den Platz der Kreatur erreicht, kann das den Rettungswurf auslösen. Eine Kreatur würfelt dafür höchstens einmal pro Zug.'],
+    ['Du konzentrierst dich auf Feenfeuer und erleidest durch einen Treffer 14 Schaden. Welchen Wurf musst du für die Konzentration ablegen?', 'Einen Konstitutionsrettungswurf gegen SG 10', 'Einen Weisheitsrettungswurf gegen SG 14', 'Einen Konstitutionsrettungswurf gegen SG 7', 'Einen Geschicklichkeitsrettungswurf gegen SG 10', 'Bei 14 Schaden ist die Hälfte 7. Weil der Mindest-Schwierigkeitsgrad 10 beträgt, würfelst du gegen SG 10.']
+  ]}
+};
+const app = document.querySelector('#app');
+const questionsPerRound = 8;
+const storageKey = 'dn-d-session-pools-v4';
+let quiz;
+
+function shuffle(values) {
+  const shuffled = [...values];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+function readQueues() {
+  try { return JSON.parse(localStorage.getItem(storageKey)) || {}; }
+  catch { return {}; }
+}
+
+function nextSet(characterId) {
+  const queues = readQueues();
+  const all = characters[characterId].questions.map((_, index) => index);
+  const remaining = queues[characterId];
+  const queue = Array.isArray(remaining) && new Set(remaining).size === remaining.length
+    && remaining.every(index => all.includes(index)) ? remaining : [];
+  const indices = queue.splice(0, questionsPerRound);
+  if (indices.length < questionsPerRound) {
+    const nextCycle = shuffle(all.filter(index => !indices.includes(index)));
+    const carried = [...indices];
+    indices.push(...nextCycle.splice(0, questionsPerRound - indices.length));
+    queue.push(...shuffle([...nextCycle, ...carried]));
+  }
+  queues[characterId] = queue;
+  try { localStorage.setItem(storageKey, JSON.stringify(queues)); } catch {}
+  return indices.map(index => characters[characterId].questions[index]);
+}
+
+function focusHeading() {
+  app.querySelector('h1, h2').focus();
+}
+
+function renderHome() {
+  quiz = null;
+  app.innerHTML = `
+    <section class="hero"><div class="ornament" aria-hidden="true">✦</div>
+      <h1 tabindex="-1">Vor der Session</h1>
+      <p>Frisch vor der Session deine Charakterfähigkeiten auf.</p>
+    </section>
+    <div class="grid">${Object.entries(characters).map(([id, character]) => `
+      <article class="card ${character.theme}"><span class="emblem" aria-hidden="true">${character.icon}</span>
+        <h2>${character.title}</h2><p>${character.subtitle} · Stufe 5</p><p class="pool-size">${character.questions.length} Fragen im Pool</p>
+        <button class="primary" type="button" data-start="${id}" aria-label="Quiz starten: ${character.title}">Quiz starten</button>
+      </article>`).join('')}</div>
+    <p class="stats">${questionsPerRound} Fragen pro Runde</p>`;
+  app.querySelectorAll('[data-start]').forEach(button => {
+    button.addEventListener('click', () => startQuiz(button.dataset.start));
+  });
+}
+
+function startQuiz(id) {
+  quiz = { id, index: 0, answers: [], questions: nextSet(id).map(row => ({
+    text: row[0], correct: row[1], options: shuffle(row.slice(1, 5)), explanation: row[5]
+  })) };
+  renderQuestion();
+  focusHeading();
+}
+
+function renderQuestion() {
+  const { id, index, questions, answers } = quiz;
+  const question = questions[index];
+  const selected = answers[index];
+  const checked = selected !== undefined;
+  const isCorrect = selected === question.correct;
+  app.innerHTML = `
+    <section class="panel">
+      <div class="top"><span>${characters[id].title}</span><span>Frage ${index + 1} von ${questions.length}</span></div>
+      <progress class="progress" aria-label="Quizfortschritt" value="${index + 1}" max="${questions.length}"></progress>
+      <h2 tabindex="-1" id="question-title">${question.text}</h2>
+      <form>
+        <fieldset aria-labelledby="question-title" ${checked ? 'disabled' : ''}>
+          ${question.options.map((option, i) => {
+            const style = checked && option === question.correct ? 'correct' : checked && option === selected ? 'wrong' : '';
+            return `<label class="choice ${style}"><input type="radio" name="option" value="${i}" ${option === selected ? 'checked' : ''}><span>${option}</span></label>`;
+          }).join('')}
+        </fieldset>
+        ${checked ? `<div class="feedback" tabindex="-1"><strong class="${isCorrect ? 'good' : 'bad'}">${isCorrect ? 'Richtig' : 'Richtige Antwort: ' + question.correct}</strong><p>${question.explanation}</p></div>` : ''}
+        <div class="actions">
+          <button type="button" class="secondary" data-home>Charakterauswahl</button>
+          ${checked ? `<button type="button" class="primary" data-next>${index + 1 === questions.length ? 'Auswertung anzeigen' : 'Nächste Frage'}</button>`
+            : '<button type="submit" class="primary" disabled>Antwort prüfen</button>'}
+        </div>
+      </form>
+    </section>`;
+  app.querySelector('[data-home]').addEventListener('click', goHome);
+  if (checked) {
+    app.querySelector('[data-next]').addEventListener('click', () => {
+      quiz.index++;
+      if (quiz.index === questions.length) renderResult();
+      else renderQuestion();
+      focusHeading();
+    });
+    return;
+  }
+  const form = app.querySelector('form');
+  form.addEventListener('change', () => { form.querySelector('[type=submit]').disabled = false; });
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const option = new FormData(form).get('option');
+    if (option === null) return;
+    quiz.answers[index] = question.options[Number(option)];
+    renderQuestion();
+    app.querySelector('.feedback').focus();
+  });
+}
+
+function renderResult() {
+  const { id, questions, answers } = quiz;
+  const score = questions.filter((question, i) => question.correct === answers[i]).length;
+  app.innerHTML = `
+    <section class="panel">
+      <div class="top">${characters[id].title}</div>
+      <h2 tabindex="-1">Auswertung</h2>
+      <p class="scores"><strong class="score">${score} / ${questions.length}</strong> richtig</p>
+      <div class="actions"><button class="secondary" data-home>Charakterauswahl</button><button class="primary" data-restart>Weitere ${questionsPerRound} Fragen</button></div>
+      ${questions.map((question, i) => `
+        <article class="result"><h3>${question.text}</h3>
+          <p class="${question.correct === answers[i] ? 'good' : 'bad'}">Deine Antwort: ${answers[i]}</p>
+          ${question.correct === answers[i] ? '' : `<p><strong>Richtige Antwort:</strong> ${question.correct}</p>`}
+          <p>${question.explanation}</p></article>`).join('')}
+    </section>`;
+  app.querySelector('[data-home]').addEventListener('click', goHome);
+  app.querySelector('[data-restart]').addEventListener('click', () => startQuiz(id));
+}
+
+function goHome() {
+  renderHome();
+  focusHeading();
+}
+
+document.querySelector('#home').addEventListener('click', event => {
+  event.preventDefault();
+  goHome();
+});
+renderHome();
+</script>
+</body>
+</html>
